@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nick Odhiambo Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/013df7f68b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <p><span class="first">N</span><span>i</span><span>c</span><span>k.</span>
+                    </div>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <span id="theme-btn">light_mode</span>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Full-stack software engineer</p>
+                    <h1>Hi, I am <span>Nick</span><br>from Kenya</h1>
+                </div>
+            </div>
+        </div>
+        <!-----------About section---------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/background.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>
+                            As a full-stack junior software engineer, I thrive on the dynamic challenges of crafting seamless web experiences.
+                            Proficient in the LAMP stack—Linux, Apache, MySQL, and Python—I bring a blend of creativity and technical expertise to every project I undertake.
+                            My journey in software engineering began with a passion for problem-solving and a keen eye for detail.
+                            From building robust backend systems to designing intuitive user interfaces, I am committed to delivering solutions that not only meet but exceed expectations.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Stack</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-end Web Development</span><br>Proficient in designing performant user interfaces</li>
+                                <li><span>Backend-end Web Development</span><br>Proficient in Building server-side logic in Django, API design and database design and management</li>
+                                <li><span>DevOps</span><br>An adequate understanding of configuration management and web hosting</li>
+                                <li><span>Version Control</span><br>An understanding of Git and Github</li>
+                            </ul>
+                        </div><div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Front-end</span><br>HTML, CSS, Javascript</li>
+                                <li><span>Backend-end</span><br>Python(Django), MySQL</li>
+                                <li><span>DevOps</span><br>Python, Github</li>
+                            </ul>
+                        </div><div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>ALX Software Engineering Program</span><br>Feb 2023 - Mar 2024</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------Services------------------------------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Front-end design</h2>
+                        <p>I design visually appealing user interfaces using HTML, CSS and JavaScript</p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Back-end design</h2>
+                        <p>I program core backend logic using Python's Django Framework and design databases using MySQL and PostgreSQL</p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-infinity"></i>
+                        <h2>DevOps</h2>
+                        <p>I deploy stable code versions to production. Besides I am proficient in setting up Django Python production environments and building CI/CD pipelines</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!-------------------------Portfolio------------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Portfolio</h1>
+                <div class="work-list">
+                    <div class="demo">
+                        <div class="work">
+                            <img src="images/work-1.jpg">
+                            <div class="layer">
+                                <h3> Content aggregator site</h3>
+                                <p>This site aggregates python programming content from various online podcasts and displays them in one place</p>
+                                <a href="https://github.com/Nickodhiambo/Python-Content-Aggregator-Website" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="demo-div">
+                            <span>Demo</span>
+                            <span id="git">Github</span>
+                        </div>
+                    </div>
+                    <div class="demo">
+                        <div class="work">
+                            <img src="images/work-2.jpg">
+                            <div class="layer">
+                                <h3>Bouncing Balls</h3>
+                                <p>A JavaScript project that displays colored balls bouncing off screen edges</p>
+                                <a href="https://github.com/Nickodhiambo/Bouncing-Balls" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="demo-div">
+                            <span>Demo</span>
+                            <span id="git">Github</span>
+                        </div>
+                    </div>
+                    <div class="demo">
+                        <div class="work">
+                            <img src="images/work-3.jpg">
+                            <div class="layer">
+                                <h3>Picture Gallery</h3>
+                                <p>A HTML, CSS and JavaScript user interface that displays a gallery of pictures</p>
+                                <a href="https://github.com/Nickodhiambo/Picture-Gallery" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="demo-div">
+                            <span>Demo</span>
+                            <span id="git">Github</span>
+                        </div>
+                    </div>
+                    <div class="demo">
+                        <div class="work">
+                            <img src="images/work-3.jpg">
+                            <div class="layer">
+                                <h3>Picture Gallery</h3>
+                                <p>A HTML, CSS and JavaScript user interface that displays a gallery of pictures</p>
+                                <a href="https://github.com/Nickodhiambo/Picture-Gallery" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="demo-div">
+                            <span>Demo</span>
+                            <span id="git">Github</span>
+                        </div>
+                    </div>
+                    <div class="demo">
+                        <div class="work">
+                            <img src="images/work-3.jpg">
+                            <div class="layer">
+                                <h3>Picture Gallery</h3>
+                                <p>A HTML, CSS and JavaScript user interface that displays a gallery of pictures</p>
+                                <a href="https://github.com/Nickodhiambo/Picture-Gallery" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="demo-div">
+                            <span>Demo</span>
+                            <span id="git">Github</span>
+                        </div>
+                    </div>
+                    <div class="demo">
+                        <div class="work">
+                            <img src="images/work-3.jpg">
+                            <div class="layer">
+                                <h3>Picture Gallery</h3>
+                                <p>A HTML, CSS and JavaScript user interface that displays a gallery of pictures</p>
+                                <a href="https://github.com/Nickodhiambo/Picture-Gallery" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="demo-div">
+                            <span>Demo</span>
+                            <span id="git">Github</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="https://github.com/Nickodhiambo" class="btn" target="_blank">Visit my Github</a>
+            </div>
+        </div>
+        <!---------------------------Contacts--------------------------------------->
+        <div id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>nodhiambo01@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0795 555 416</p>
+                        <div class="social-icons">
+                            <a href="https://twitter.com/NickWillian1" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://github.com/Nickodhiambo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/nickodhiambo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2" target="blank">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; nick odhiambo 2024</p>
+            </div>
+        </div>
+        <script>
+            var tabLinks = document.getElementsByClassName("tab-links");
+            var tabContents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tabLink of tabLinks) {
+                    tabLink.classList.remove('active-link');
+                }
+
+                for (tabContent of tabContents) {
+                    tabContent.classList.remove('active-tab');
+                }
+                event.currentTarget.classList.add('active-link');
+                document.getElementById(tabname).classList.add('active-tab');
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwdeIQgF6uFmET0MhqxtlaEFl6Rd7qIo_HTgNnOeVrL9a7Rsh-n6pXLpUZpAiLeZo_W/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+          <script>
+            themeBtn = document.querySelector("#theme-btn");
+            themeBtn.addEventListener("click", () => {
+                document.body.classList.toggle("light-mode");
+                themeBtn.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
+            });
+          </script>
+    </body>
+</html>
